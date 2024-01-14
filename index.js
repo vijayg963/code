@@ -1,5 +1,4 @@
 // var isAnagram = function (s, t) {
-//     console.log(t.split("").sort())
 //     console.log(s.split("").sort().join("") === t.split("").sort().join(""))
 //     return s.split("").sort().join("") === s.split("").sort().join("");
 // };
@@ -92,7 +91,7 @@
 // console.log(topKFrequent(nums))
 
 
-const nums = [1, 2, 3, 4]
+// const nums = [1, 2, 3, 4]
 // Output: [24,12,8,6]
 //First
 // if (!nums.length) return null
@@ -145,58 +144,109 @@ const nums = [1, 2, 3, 4]
 // console.log(productExceptSelf(nums))
 
 
-function revesStr(str) {
-    let result = ""
-    for (let i = str.length - 1; i >= 0; i--) {
-        result += str[i]
-    }
-    return result
-}
+// function revesStr(str) {
+//     let result = ""
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         result += str[i]
+//     }
+//     return result
+// }
 
-console.log(revesStr("World"))
+// console.log(revesStr("World"))
 
-let str = "Hello"
-
-
-console.log(str.split("").reverse().join(""))
-
-const arr = [1, 2, 4, 5, 6]
-
-function popElm(arr) {
-    const value = arr.pop()
-    arr.unshift(value)
-    return arr
-}
-
-console.log(popElm(arr))
-let str1 = "mary"
-let str2 = "Army"
+// let str = "Hello"
 
 
-function anagam(str1, str2) {
-    if (str1.length === str2.length) {
-        let firstElm = str1.split("").sort().join("").toLocaleLowerCase()
-        let secondElm = str1.split("").sort().join("").toLocaleLowerCase()
-        return firstElm === secondElm
-    }
-}
+// console.log(str.split("").reverse().join(""))
 
-console.log(anagam(str1, str2))
+// const arr = [1, 2, 4, 5, 6]
 
-multiply(5)(6)
+// function popElm(arr) {
+//     const value = arr.pop()
+//     arr.unshift(value)
+//     return arr
+// }
 
-function multiply(a) {
-    return (b) => {
-        return a * b
-    }
-}
-
-console.log(multiply(5)(6))
+// console.log(popElm(arr))
+// let str1 = "mary"
+// let str2 = "Army"
 
 
-var k = 1;
-if (1) {
-    eval(function foo() { })
-    k += typeof foo
-}
-console.log(k)
+// function anagam(str1, str2) {
+//     if (str1.length === str2.length) {
+//         let firstElm = str1.split("").sort().join("").toLocaleLowerCase()
+//         let secondElm = str1.split("").sort().join("").toLocaleLowerCase()
+//         return firstElm === secondElm
+//     }
+// }
+
+// console.log(anagam(str1, str2))
+
+// multiply(5)(6)
+
+// function multiply(a) {
+//     return (b) => {
+//         return a * b
+//     }
+// }
+
+// console.log(multiply(5)(6))
+
+
+// var k = 1;
+// if (1) {
+//     eval(function foo() { })
+//     k += typeof foo
+// }
+// console.log(k)
+
+// const arr = [1, 2, 4, 5, 6]
+
+// function popElm(arr) {
+//     let queue = [];
+//     let i = 1;
+
+//     queue.push(arr[0]);
+
+//     while (queue.length != 0 && i <= arr.length) {
+//         const out = queue.shift();
+//         queue.push(arr[i++]);
+//         if (queue.length === 0) break;
+//     }
+
+// }
+
+// console.log(popElm(arr))
+// console.log(arr)
+
+// var isPalindrome = function (s) {
+//     const arr = s.replace(/[^a-zA-Z0-9 ]/g, "").split(" ").join("")
+//     let rev = ""
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         rev += arr[i]
+//     }
+//     if (arr.toLowerCase() === rev.toLowerCase()) {
+//         return true
+//     }
+//     return false
+
+// };
+
+// var isPalindrome = function (s) {
+//     const cleanedString = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+//     let i = 0;
+//     let j = cleanedString.length - 1;
+
+//     while (i < j) {
+//         if (cleanedString[i] !== cleanedString[j]) {
+//             return false;
+//         }
+//         i++;
+//         j--;
+//     }
+
+//     return true;
+// };
+
+// console.log(isPalindrome("A man, a plan, a canal: Panama"))
